@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./ui/globals.css";
+// import { Bitter } from "next/font/google";
+import "./globals.css";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
-const roboto = Roboto({
-  weight: ['100', '300', '400', '500', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+// const bitter = Bitter({
+//   weight: ['100', '300', '400', '500', '700'],
+//   style: ['normal', 'italic'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
 
 export const metadata: Metadata = {
   title: "Design Portfolio",
@@ -21,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body>
+        <Navbar />
+         {children}
+        <Footer />
+      </body>
     </html>
   );
 }
