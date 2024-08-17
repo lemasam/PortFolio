@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import SocialIcons from "./common/SocialIcons";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   return (
     <div className="W-full h-3/4 flex flex-col tablet:flex-row items-center gap-12 justify-center">
-      <div className="flex flex-col gap-5 w-2/5">
+      <div className="flex flex-col gap-5 w-1/2">
         <div className="flex flex-col gap-2">
           <p>Hello! I'm</p>
           <h2 className="text-orange">Catherine Vuthi</h2>
@@ -18,6 +19,9 @@ const Hero = (props: Props) => {
           with all users in mind, ensuring a seamless and inclusive experience
           for everyone.
         </p>
+        <div>
+            <SocialIcons />
+        </div>
       </div>
       <div>
         {" "}

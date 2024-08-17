@@ -33,6 +33,6 @@
     @apply text-sm;
   }
   p {
-    @apply text-sm text-white/85;
+    @apply text-sm text-white/75;
   }
 }
