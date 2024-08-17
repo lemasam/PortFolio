@@ -1,7 +1,10 @@
+"use client"
+
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 import { MdMenu } from "react-icons/md";
+import { Card } from './common/styles';
 
 type Props = {}
 
@@ -53,9 +56,9 @@ const Navbar = (props: Props) => {
                 </Link>
             ))}
         </div>
-        <div>
-            <MdMenu size={30} className='text-orange cursor-pointer' />
-        </div>
+        <Card className="w-12 h-12 text-orange">
+            <MdMenu size={30} className='cursor-pointer' />
+        </Card>
     </div>
   )
 }

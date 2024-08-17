@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,10 +15,10 @@
 
 @layer base {
   h1 {
-    @apply text-3xl;
+    @apply text-3xl font-semibold;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-2xl font-semibold;
   }
   h3 {
     @apply text-xl;
