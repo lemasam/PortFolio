@@ -8,19 +8,18 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'white': '#ffffff',
-      'orange': '#fe930e',
-      'bg-gray': '#1b1b1c',
-      'bg-dark': '#121212',
+      white: "#ffffff",
+      orange: "#fe930e",
+      "bg-gray": "#1b1b1c",
+      "bg-dark": "#121212",
     },
     screens: {
-      'mobile': '640px',
-      'tablet': '992px',
-      'laptop': '1024px',
-      'desktop': '1280px',
+      mobile: "640px",
+      tablet: "992px",
+      laptop: "1024px",
+      desktop: "1280px",
     },
-    extend: {
-    },
+    extend: {},
   },
   plugins: [],
 };
