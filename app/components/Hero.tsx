@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import SocialIcons from "./common/SocialIcons";
+import TechStack from "./common/TechStack";
 import { LinearGradient } from "react-text-gradients";
 import { FaArrowDown } from "react-icons/fa";
 
@@ -21,18 +22,19 @@ const Hero = (props: Props) => {
               Software Engineer
             </LinearGradient>
           </h1>
-          <p className="tablet:pr-20">
+          <p className="tablet:pr-5">
             I specialize in creating visually stunning user experiences that
             prioritize both beauty and accessibility. My web products are
             designed with all users in mind, ensuring a seamless and inclusive
             experience for everyone.
           </p>
-          <div className="mt-6 w-full">
+          <div className="mt-6 flex flex-col tablet:flex-row w-full gap-y-4">
             <SocialIcons />
+            <TechStack />
           </div>
         </div>
         <div className="hidden tablet:flex">
-          <Image src="/bgimg.png" width={500} height={500} alt="icon" />
+          <Image src="/bgimg.png" width={600} height={450} alt="icon" />
         </div>
       </div>
       <div className="h-20 w-10 border-2 border-white mt-20 m-auto rounded-full flex justify-center items-center animate-bounce">

@@ -11,6 +11,6 @@ export const Card = styled.div`
 
   &:hover {
     color: #fe930e;
-    transform: scale(1.1); /* Animates the scale slightly */
+    transform: scale(1.1);
   }
 `;

@@ -11,6 +11,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color-scheme: dark;
+  letter-spacing: 0.1em;
 }
 
 @layer base {
@@ -24,13 +25,13 @@
     @apply text-xl;
   }
   h4 {
-    @apply text-lg text-orange;
+    @apply text-lg;
   }
   h5 {
     @apply text-base;
   }
   h6 {
-    @apply text-sm;
+    @apply text-sm text-orange uppercase italic;
   }
   p {
     @apply text-sm text-white/75;
