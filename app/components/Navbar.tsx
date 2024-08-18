@@ -18,11 +18,11 @@ const menus = [
     link: "#services",
   },
   {
-    title: "Portfolio",
-    link: "#",
+    title: "Resume",
+    link: "#resume",
   },
   {
-    title: "Resume",
+    title: "Portfolio",
     link: "#",
   },
   // {
@@ -45,7 +45,7 @@ const menus = [
 
 const Navbar = (props: Props) => {
   return (
-    <div className="flex flex-row w-full items-center justify-between px-8 py-6 sticky top-0">
+    <div className="flex flex-row w-full items-center justify-between px-8 py-4 sticky top-0 bg-bg-dark">
       <div>
         <Image src="/icon.png" width={50} height={50} alt="logo" />
       </div>

@@ -9,8 +9,8 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex flex-col px-5 tablet:px-16 pb-6">
-      <div className="w-full h-full tablet:h-3/4 flex flex-col tablet:flex-row justify-between">
+    <div className="flex flex-col px-5 tablet:px-16 py-3 tablet:py-20">
+      <div className="w-full h-full tablet:h-5/6 flex flex-col tablet:flex-row justify-center items-center">
         <div className="flex flex-col gap-5 w-full tablet:w-1/2">
           <div className="flex flex-col gap-1">
             <p>Hello! I'm Catherine,</p>

@@ -9,7 +9,7 @@ type Props = {};
 const Services = (props: Props) => {
   return (
     <div
-      className="bg-bg-gray py-10 tablet:py-20 px-5 tablet:px-16 flex flex-col gap-12"
+      className="bg-bg-gray py-10 tablet:py-28 px-5 tablet:px-16 flex flex-col gap-12"
       id="services"
     >
       <div className="flex flex-col gap-4 w-full">
