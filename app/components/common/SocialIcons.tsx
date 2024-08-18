@@ -2,25 +2,8 @@
 
 import Link from "next/link";
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { MdWhatsapp } from "react-icons/md";
 import { Card } from "./styles";
-
-const socialIcons = [
-  {
-    icon: <FaLinkedinIn size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
-  },
-  {
-    icon: <FaXTwitter size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
-  },
-  {
-    icon: <MdWhatsapp size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
-  },
-];
+import { socialIcons } from "../../lib/hero-data";
 
 type Props = {};
 
