@@ -22,7 +22,7 @@ const Hero = (props: Props) => {
               Software Engineer
             </LinearGradient>
           </h1>
-          <p className="tablet:pr-5">
+          <p className="tablet:pr-6">
             I specialize in creating visually stunning user experiences that
             prioritize both beauty and accessibility. My web products are
             designed with all users in mind, ensuring a seamless and inclusive
