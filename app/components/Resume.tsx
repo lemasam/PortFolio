@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Card } from "./common/styles";
+import About from "./common/About";
 
 type Props = {};
 
@@ -24,7 +25,9 @@ const Resume = (props: Props) => {
           <Card className="w-3/4 px-4 py-3">Experience</Card>
           <Card className="w-3/4 px-4 py-3">Professional Skills</Card>
         </div>
-        <div>Right</div>
+        <div>
+          <About />
+        </div>
       </div>
     </div>
   );
