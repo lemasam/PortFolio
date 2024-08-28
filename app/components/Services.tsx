@@ -16,7 +16,7 @@ const Services = (props: Props) => {
         <h6>Services</h6>
         <h1 className="capitalize">What I do</h1>
       </div>
-      <div className="flex flex-wrap w-full gap-14">
+      <div className="flex flex-wrap w-full gap-10">
         {services.map((service, index) => (
           <Card
             className="w-full tablet:w-72 laptop:w-96 py-5 px-8 flex flex-col gap-5 text-center"
