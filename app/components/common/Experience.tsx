@@ -12,7 +12,10 @@ type Props = {};
 
 const Experience = (props: Props) => {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
+      <div>
+        <h3>My Experience</h3>
+      </div>
       <VerticalTimeline layout="1-column-left">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

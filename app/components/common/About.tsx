@@ -10,8 +10,9 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <div className="flex flex-col gap-4">
+      <h3>About Me</h3>
       <div className="w-full h-auto flex gap-10">
-        <Profile className="h-36 w-36">
+        {/* <Profile className="h-36 w-36">
           <Image
             src="/profile.jpg"
             width={150}
@@ -19,26 +20,37 @@ const About = (props: Props) => {
             className="rounded-full"
             alt={"profile picture"}
           />
-        </Profile>
+        </Profile> */}
         <div className="flex flex-col gap-2 w-full">
-          <h3 className="text-3xl pb-3">Catherine Vuthi</h3>
-          <p>Full Stack Software Engineer</p>
           <div className="flex w-full gap-28">
             <div className="flex flex-col gap-5 mt-4">
               <div className="flex gap-2 items-center">
                 <CiLocationOn className="text-orange" />
-                <p className="text-xs">Nairobi, Kenya</p>
+                <p className="text-xs">Name: </p>
+                <p className="text-xs text-white">Catherine Vuthi</p>
+              </div>
+              <div className="flex gap-2 items-center">
+                <CiLocationOn className="text-orange" />
+                <p className="text-xs">Profession:</p>
+                <p className="text-xs text-white">Software Engineer</p>
+              </div>
+              <div className="flex gap-2 items-center">
+                <CiLocationOn className="text-orange" />
+                <p className="text-xs">Nationality:</p>
+                <p className="text-xs text-white">Kenyan</p>
               </div>
               <div className="flex gap-2 items-center">
                 <MdOutlineMailOutline className="text-orange" />
-                <p className="text-xs">catherine.codes@gmail.com</p>
-              </div>
-              <div className="flex gap-2 items-center">
-                <CgWebsite className="text-orange" />
-                <p className="text-xs">www.catherine.com</p>
+                <p className="text-xs">Email:</p>
+                <p className="text-xs text-white">catherine.codes@gmail.com</p>
               </div>
             </div>
             <div className="flex gap-5 flex-col mt-3">
+              <div className="flex gap-2 items-center">
+                <CgWebsite className="text-orange" />
+                <p className="text-xs">Website:</p>
+                <p className="text-xs text-white">www.catherine.com</p>
+              </div>
               <p className="flex gap-2 items-center text-sm">
                 <span className="text-orange text-sm font-semibold gap-3">
                   5+
