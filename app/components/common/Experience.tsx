@@ -47,7 +47,7 @@ const Experience = (props: Props) => {
           <h5 className="vertical-timeline-element-subtitle">- Remote</h5>
           <p>StartupBlink - Haifa, Israel</p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
+        {/* <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#1b1b1c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #1b1b1c" }}
@@ -59,7 +59,7 @@ const Experience = (props: Props) => {
           <h4 className="vertical-timeline-element-title">ICT Officer</h4>
           <h5 className="vertical-timeline-element-subtitle">- On-site</h5>
           <p>Milimani Law Courts - Nairobi, Kenya</p>
-        </VerticalTimelineElement>
+        </VerticalTimelineElement> */}
       </VerticalTimeline>
     </div>
   );

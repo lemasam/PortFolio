@@ -21,8 +21,8 @@ const About = (props: Props) => {
             alt={"profile picture"}
           />
         </Profile> */}
-        <div className="flex flex-col gap-2 w-full">
-          <div className="flex w-full gap-28">
+        <div className="flex flex-col gap-8 w-full">
+          <div className="flex w-full gap-32">
             <div className="flex flex-col gap-5 mt-4">
               <div className="flex gap-2 items-center">
                 <CiLocationOn className="text-orange" />
@@ -36,8 +36,8 @@ const About = (props: Props) => {
               </div>
               <div className="flex gap-2 items-center">
                 <CiLocationOn className="text-orange" />
-                <p className="text-xs">Nationality:</p>
-                <p className="text-xs text-white">Kenyan</p>
+                <p className="text-xs">Location:</p>
+                <p className="text-xs text-white">Nairobi, Kenya</p>
               </div>
               <div className="flex gap-2 items-center">
                 <MdOutlineMailOutline className="text-orange" />
@@ -51,13 +51,13 @@ const About = (props: Props) => {
                 <p className="text-xs">Website:</p>
                 <p className="text-xs text-white">www.catherine.com</p>
               </div>
-              <p className="flex gap-2 items-center text-sm">
+              <p className="flex gap-2 items-center text-sm text-white">
                 <span className="text-orange text-sm font-semibold gap-3">
                   5+
                 </span>
                 Projects
               </p>
-              <p className="flex gap-2 items-center text-xs">
+              <p className="flex gap-2 items-center text-xs text-white">
                 <span className="text-orange text-sm font-semibold">2+</span>
                 Years of Experience
               </p>
