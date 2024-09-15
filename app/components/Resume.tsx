@@ -30,7 +30,7 @@ const Resume = (props: Props) => {
 
   return (
     <div
-      className="bg-bg-dark py-10 tablet:py-28 px-5 tablet:px-16 flex flex-col gap-12"
+      className="bg-bg-dark py-10 tablet:py-28 px-5 tablet:px-16 flex flex-col gap-12 overflow-y-scroll"
       id="resume"
     >
       <div className="flex flex-col gap-4 w-full">
@@ -40,7 +40,7 @@ const Resume = (props: Props) => {
         </div>
       </div>
       <div className="flex">
-        <div className="w-1/3 flex flex-col gap-8">
+        <div className="w-1/4 flex flex-col gap-8">
           <Card
             className={`w-3/4 px-4 py-3 ${
               activeSection === "about" ? "bg-orange" : ""
