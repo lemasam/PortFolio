@@ -2,8 +2,6 @@
 
 import React, { useState } from "react";
 import { Card } from "./common/styles";
-import About from "./common/About";
-// Import other components like Education, Experience, ProfessionalSkills
 import Education from "./common/Education";
 import Experience from "./common/Experience";
 import ProfessionalSkills from "./common/ProfessionalSkills";
@@ -15,14 +13,12 @@ const Resume = (props: Props) => {
 
   const renderContent = () => {
     switch (activeSection) {
-      case "about":
-        return <About />;
+      case "skills":
+        return <ProfessionalSkills />;
       case "education":
         return <Education />;
       case "experience":
         return <Experience />;
-      case "skills":
-        return <ProfessionalSkills />;
       default:
         return null;
     }
@@ -43,11 +39,11 @@ const Resume = (props: Props) => {
           </div>
           <Card
             className={`w-3/4 px-4 py-3 ${
-              activeSection === "about" ? "bg-orange" : ""
+              activeSection === "skills" ? "bg-orange" : ""
             }`}
-            onClick={() => setActiveSection("about")}
+            onClick={() => setActiveSection("skills")}
           >
-            About Me
+            Professional Skills
           </Card>
           <Card
             className={`w-3/4 px-4 py-3 ${
@@ -65,16 +61,8 @@ const Resume = (props: Props) => {
           >
             Experience
           </Card>
-          <Card
-            className={`w-3/4 px-4 py-3 ${
-              activeSection === "skills" ? "bg-orange" : ""
-            }`}
-            onClick={() => setActiveSection("skills")}
-          >
-            Professional Skills
-          </Card>
         </div>
-        <div className="w-2/3">{renderContent()}</div>
+        <div className="w-3/4">{renderContent()}</div>
       </div>
     </div>
   );
