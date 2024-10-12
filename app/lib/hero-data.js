@@ -38,3 +38,63 @@ export const techStack = [
     color: "#68A063",
   },
 ];
+
+// HTML, CSS, TAILWIND, REACT, NEXTJS, BOOTSTRAP, SEO
+export const frontend = [
+  {
+    icon: <DiMongodb size={40} />,
+    color: "#4DB33D",
+  },
+  {
+    icon: <SiExpress size={40} />,
+    color: "#ffffff",
+  },
+  {
+    icon: <FaReact size={40} />,
+    color: "#61DBFB",
+  },
+  {
+    icon: <FaNodeJs size={40} />,
+    color: "#68A063",
+  },
+];
+
+// Javascript, Typescript, ruby, nodejs, postgresql, mongoDB, MYSQL, REDIS
+export const backend = [
+  {
+    icon: <DiMongodb size={40} />,
+    color: "#4DB33D",
+  },
+  {
+    icon: <SiExpress size={40} />,
+    color: "#ffffff",
+  },
+  {
+    icon: <FaReact size={40} />,
+    color: "#61DBFB",
+  },
+  {
+    icon: <FaNodeJs size={40} />,
+    color: "#68A063",
+  },
+];
+
+// Docker, git, etc
+export const otherTools = [
+  {
+    icon: <DiMongodb size={40} />,
+    color: "#4DB33D",
+  },
+  {
+    icon: <SiExpress size={40} />,
+    color: "#ffffff",
+  },
+  {
+    icon: <FaReact size={40} />,
+    color: "#61DBFB",
+  },
+  {
+    icon: <FaNodeJs size={40} />,
+    color: "#68A063",
+  },
+];
