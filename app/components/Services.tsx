@@ -19,7 +19,7 @@ const Services = (props: Props) => {
       <div className="flex flex-wrap w-full gap-10">
         {services.map((service, index) => (
           <Card
-            className="w-full tablet:w-72 laptop:w-96 py-5 px-8 flex flex-col gap-5 text-center"
+            className="w-full tablet:w-72 laptop:w-80 py-5 px-8 flex flex-col gap-5 text-center"
             key={index}
           >
             {service.icon}
