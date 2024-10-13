@@ -9,7 +9,7 @@ import ProfessionalSkills from "./common/ProfessionalSkills";
 type Props = {};
 
 const Resume = (props: Props) => {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState("skills");
 
   const renderContent = () => {
     switch (activeSection) {
