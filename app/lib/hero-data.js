@@ -1,9 +1,29 @@
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaFigma } from "react-icons/fa6";
 import { MdWhatsapp } from "react-icons/md";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaDocker,
+  FaGithub,
+  FaBitbucket,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
-import { SiExpress } from "react-icons/si";
+import {
+  SiExpress,
+  SiTailwindcss,
+  SiTypescript,
+  SiRubyonrails,
+  SiRedis,
+  SiPostgresql,
+  SiMysql,
+  SiPlaywright,
+} from "react-icons/si";
+import { RiNextjsFill, RiJavascriptFill } from "react-icons/ri";
+import { TbSeo } from "react-icons/tb";
 
 export const socialIcons = [
   {
@@ -39,62 +59,95 @@ export const techStack = [
   },
 ];
 
-// HTML, CSS, TAILWIND, REACT, NEXTJS, BOOTSTRAP, SEO
 export const frontend = [
   {
-    icon: <DiMongodb size={40} />,
-    color: "#4DB33D",
+    icon: <FaHtml5 size={40} />,
+    color: "#e54b20",
   },
   {
-    icon: <SiExpress size={40} />,
-    color: "#ffffff",
+    icon: <FaCss3Alt size={40} />,
+    color: "#214ce4",
   },
   {
     icon: <FaReact size={40} />,
     color: "#61DBFB",
   },
   {
-    icon: <FaNodeJs size={40} />,
+    icon: <RiNextjsFill size={40} />,
+    color: "#ffffff",
+  },
+  {
+    icon: <SiTailwindcss size={40} />,
+    color: "#35bef8",
+  },
+  {
+    icon: <FaBootstrap size={40} />,
+    color: "#7b11f6",
+  },
+  {
+    icon: <TbSeo size={40} />,
     color: "#68A063",
   },
 ];
 
-// Javascript, Typescript, ruby, nodejs, postgresql, mongoDB, MYSQL, REDIS
 export const backend = [
   {
+    icon: <RiJavascriptFill size={40} />,
+    color: "#f7e029",
+  },
+  {
+    icon: <SiTypescript size={40} />,
+    color: "#387bc8",
+  },
+  {
+    icon: <SiRubyonrails size={40} />,
+    color: "#9d180c",
+  },
+  {
+    icon: <SiMysql size={40} />,
+    color: "#4DB33D",
+  },
+  {
+    icon: <SiRedis size={40} />,
+    color: "#c73732",
+  },
+  {
     icon: <DiMongodb size={40} />,
     color: "#4DB33D",
   },
   {
-    icon: <SiExpress size={40} />,
-    color: "#ffffff",
-  },
-  {
-    icon: <FaReact size={40} />,
-    color: "#61DBFB",
-  },
-  {
-    icon: <FaNodeJs size={40} />,
-    color: "#68A063",
+    icon: <SiPostgresql size={40} />,
+    color: "#4DB33D",
   },
 ];
 
-// Docker, git, etc
 export const otherTools = [
-  {
-    icon: <DiMongodb size={40} />,
-    color: "#4DB33D",
-  },
   {
     icon: <SiExpress size={40} />,
     color: "#ffffff",
   },
   {
-    icon: <FaReact size={40} />,
-    color: "#61DBFB",
-  },
-  {
     icon: <FaNodeJs size={40} />,
     color: "#68A063",
+  },
+  {
+    icon: <FaDocker size={40} />,
+    color: "#2f99ed",
+  },
+  {
+    icon: <FaGithub size={40} />,
+    color: "#fff",
+  },
+  {
+    icon: <FaBitbucket size={40} />,
+    color: "#2e88ff",
+  },
+  {
+    icon: <FaFigma size={40} />,
+    color: "#21d285",
+  },
+  {
+    icon: <SiPlaywright size={40} />,
+    color: "#299129",
   },
 ];
