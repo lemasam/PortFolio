@@ -24,9 +24,7 @@ const Hero = (props: Props) => {
           </h1>
           <p className="tablet:pr-6">
             I specialize in creating visually stunning user experiences that
-            prioritize both beauty and accessibility. My web products are
-            designed with all users in mind, ensuring a seamless and inclusive
-            experience for everyone.
+            prioritize both beauty and accessibility.
           </p>
           <div className="mt-6 flex flex-col tablet:flex-row w-full gap-y-4">
             <SocialIcons />
