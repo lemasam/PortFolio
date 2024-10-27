@@ -23,7 +23,7 @@ const menus = [
   },
   {
     title: "Portfolio",
-    link: "#",
+    link: "#portfolio",
   },
   // {
   //     title: 'Testimonials',
@@ -35,7 +35,7 @@ const menus = [
   // },
   {
     title: "Blog",
-    link: "#",
+    link: "#blog",
   },
   {
     title: "Contact",
