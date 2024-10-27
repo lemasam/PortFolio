@@ -16,6 +16,17 @@ export const Card = styled.div`
   }
 `;
 
+export const PortfolioCard = styled.div`
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #0b0b0b, -5px -5px 10px #191919;
+
+  &:hover {
+    color: #fe930e;
+    transform: scale(1.0);
+  }
+`;
+
 export const Profile = styled.div`
   display: flex;
   justify-content: center;
