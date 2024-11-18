@@ -39,7 +39,7 @@ const menus = [
   },
   {
     title: "Contact",
-    link: "#",
+    link: "#contact",
   },
 ];
 
