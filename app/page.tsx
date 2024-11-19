@@ -7,7 +7,7 @@ import Services from "./components/Services";
 
 export default function Home() {
   return (
-    <main className="py-6">
+    <main className="pt-6">
       <Hero />
       <Services />
       <Resume />
