@@ -9,29 +9,29 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex flex-col px-5 tablet:px-16 py-3 tablet:py-20">
-      <div className="w-full h-full tablet:h-5/6 flex flex-col tablet:flex-row justify-center items-center">
-        <div className="flex flex-col gap-5 w-full tablet:w-1/2">
+    <div className="flex flex-col px-5 tablet:px-16 py-3 laptop:py-20">
+      <div className="w-full h-full laptop:h-5/6 flex flex-col laptop:flex-row justify-center items-center">
+        <div className="flex flex-col gap-5 w-full laptop:w-1/2">
           <div className="flex flex-col gap-1">
             <p>Hello! I'm Catherine,</p>
           </div>
-          <h1 className="uppercase">
+          <h1 className="uppercase text-xl tablet:text-3xl">
             <LinearGradient
               gradient={["to right", "#fe930e , #fdba74, #ffffff"]}
             >
               Software Engineer
             </LinearGradient>
           </h1>
-          <p className="tablet:pr-6">
+          <p className="text-xs tablet:pr-6">
             I specialize in creating visually stunning user experiences that
             prioritize both beauty and accessibility.
           </p>
-          <div className="mt-6 flex flex-col tablet:flex-row w-full gap-y-4">
+          <div className="mt-6 flex flex-col laptop:flex-row w-full gap-y-4">
             <SocialIcons />
             <TechStack />
           </div>
         </div>
-        <div className="hidden tablet:flex">
+        <div className="hidden laptop:flex">
           <Image src="/bgimg.png" width={600} height={450} alt="icon" />
         </div>
       </div>

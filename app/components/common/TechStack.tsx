@@ -8,7 +8,7 @@ type Props = {};
 
 const TechStack = (props: Props) => {
   return (
-    <div className="flex flex-col gap-4 w-1/2">
+    <div className="flex flex-col gap-4 w-full laptop:w-1/2">
       <p className="uppercase">Tech stack</p>
       <div className="flex gap-4">
         {techStack.map((stack, index) => (
