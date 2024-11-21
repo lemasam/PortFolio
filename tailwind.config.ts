@@ -14,8 +14,7 @@ const config: Config = {
       "bg-dark": "#121212",
     },
     screens: {
-      mobile: "640px",
-      tablet: "992px",
+      tablet: "640px",
       laptop: "1024px",
       desktop: "1280px",
     },
