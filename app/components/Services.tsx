@@ -16,10 +16,10 @@ const Services = (props: Props) => {
         <h6>Services</h6>
         <h1 className="capitalize">What I do</h1>
       </div>
-      <div className="flex flex-wrap w-full gap-10">
+      <div className="flex flex-col w-full justify-between gap-10 tablet:flex-row">
         {services.map((service, index) => (
           <Card
-            className="w-full tablet:w-72 laptop:w-80 py-5 px-8 flex flex-col gap-5 text-center"
+            className="w-full py-5 px-8 flex flex-col gap-5 text-center"
             key={index}
           >
             {service.icon}
