@@ -10,7 +10,7 @@ const ProfessionalSkills = (props: Props) => {
       <div>
         <h3>My Skills</h3>
       </div>
-      <div className="flex gap-4 justify-between w-full">
+      <div className="flex flex-col laptop:flex-row gap-4 justify-between w-full">
         <div className="w-full bg-bg-gray rounded-lg p-4">
           <div className="flex gap-4 justify-center flex-wrap">
             {frontend.map((stack, index) => (
