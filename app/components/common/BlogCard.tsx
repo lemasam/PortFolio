@@ -13,29 +13,30 @@ type Props = {
     description: string;
     author: string;
     datePosted: string;
+    url: string;
   }[]
 };
 
-const BlogCard = ({blogPosts}: Props) => {
+const BlogCard = ({ blogPosts }: Props) => {
   return (
     <>
       {blogPosts.length > 0 &&
         blogPosts.map(
-          ({ image, title, description, author, datePosted }, index) => (
+          ({ image, title, description, author, datePosted, url }, index) => (
             <PortfolioCard
-              className="w-full tablet:w-[360px] flex flex-col gap-3"
+              className="w-full tablet:w-[360px] flex flex-col"
               key={index}
             >
               <Image
                 src={image}
                 width={400}
-                height={300}
+                height={400}
                 alt="Blog image"
-                className="rounded-t-lg "
+                className="rounded-t-lg h-36 w-full"
               />
               <div className="bg-bg-gray">
                 <div className="px-2 py-3 flex flex-col gap-3">
-                  <Link href="/" className="font-bold text-sm">
+                  <Link href={url} className="font-bold text-sm" target="_blank">
                     {title}
                   </Link>
                   <p className="text-xs">{description}</p>

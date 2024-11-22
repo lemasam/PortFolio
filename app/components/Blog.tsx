@@ -10,7 +10,7 @@ const Blog = () => {
     >
       <div className="flex flex-col gap-4 w-full">
         <h6>Blog</h6>
-        <h1 className="capitalize">My Latest Blog Posts</h1>
+        <h1 className="capitalize">My Blog Posts</h1>
       </div>
       <div className="w-full flex flex-col laptop:flex-row justify-between gap-3">
         <BlogCard blogPosts={blogPosts} />
