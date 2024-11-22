@@ -27,7 +27,7 @@ const Contact = (props: Props) => {
             <p>catherinev.codes@gmail.com</p>
           </div>
         </div>
-        <div className="w-full laptop:w-1/2">
+        <div className="w-full laptop:w-1/2 mt-3 laptop:mt-o">
           <ContactForm />
         </div>
       </div>
