@@ -4,13 +4,15 @@ import SocialIcons from "./common/SocialIcons";
 import TechStack from "./common/TechStack";
 import { LinearGradient } from "react-text-gradients";
 import { FaArrowDown } from "react-icons/fa";
+import QrCode from "./common/QrCode";
+import Link from "next/link";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex flex-col px-5 tablet:px-16 py-3 laptop:py-20">
-      <div className="w-full h-full laptop:h-5/6 flex flex-col laptop:flex-row justify-center items-center">
+    <div className="flex flex-col px-5 tablet:px-16 py-3 laptop:py-10">
+      <div className="w-full flex flex-col laptop:flex-row items-center justify-around gap-6">
         <div className="flex flex-col gap-5 w-full laptop:w-1/2">
           <div className="flex flex-col gap-1">
             <p>Hello! I'm Catherine,</p>
@@ -31,13 +33,16 @@ const Hero = (props: Props) => {
             <TechStack />
           </div>
         </div>
-        <div className="hidden laptop:flex">
-          <Image src="/bgimg.png" width={600} height={450} alt="icon" />
+        <div className="flex">
+          <QrCode />
         </div>
       </div>
-      <div className="h-20 w-10 border-2 border-white mt-20 m-auto rounded-full flex justify-center items-center animate-bounce">
+      <Link
+        href="#services"
+        className="h-20 w-10 border-2 border-white mt-20 m-auto rounded-full flex justify-center items-center animate-bounce"
+      >
         <FaArrowDown className="text-orange" />
-      </div>
+      </Link>
     </div>
   );
 };
