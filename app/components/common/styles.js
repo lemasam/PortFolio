@@ -22,7 +22,6 @@ export const PortfolioCard = styled.div`
   box-shadow: 5px 5px 10px #0b0b0b, -5px -5px 10px #191919;
 
   &:hover {
-    color: #fe930e;
     transform: scale(1.0);
   }
 `;
