@@ -32,11 +32,11 @@ const BlogCard = ({ blogPosts }: Props) => {
                 width={400}
                 height={400}
                 alt="Blog image"
-                className="rounded-t-lg h-36 w-full"
+                className="rounded-t-lg h-40 tablet:h-36 w-full"
               />
               <div className="bg-bg-gray">
                 <div className="px-2 py-3 flex flex-col gap-3">
-                  <Link href={url} className="font-bold text-sm" target="_blank">
+                  <Link href={url} className="font-bold text-sm hover:text-orange" target="_blank">
                     {title}
                   </Link>
                   <p className="text-xs">{description}</p>
