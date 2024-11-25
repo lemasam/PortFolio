@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: "/web1.png",
+    image: "/portfolio.png",
     title: "Personal Portfolio",
     technologies: ["NextJs", "Typescript", "TailwindCSS", "EmailJS"],
     liveUrl: "/",
