@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     image: "/portfolio.png",
     title: "Personal Portfolio",
     technologies: ["NextJs", "Typescript", "TailwindCSS", "EmailJS"],
@@ -7,6 +8,7 @@ export const projects = [
     type: "Solo",
   },
   {
+    id: 2,
     image: "/sblink.png",
     title: "StartupBlink",
     technologies: [
@@ -22,6 +24,7 @@ export const projects = [
     type: "Team",
   },
   {
+    id: 3,
     image: "/hospitalfinder.png",
     title: "HospitalFinder",
     technologies: ["HTML", "CSS", "Javascript"],
@@ -29,6 +32,7 @@ export const projects = [
     type: "Solo",
   },
   {
+    id: 4,
     image: "/technerds.png",
     title: "TechNerds",
     technologies: [

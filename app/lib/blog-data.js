@@ -1,5 +1,6 @@
 export const blogPosts = [
   {
+    id: 1,
     image: "/img5.jpg",
     title:
       "Learning, Growing, and Thriving: Bootcamp to Software Guru",
@@ -10,6 +11,7 @@ export const blogPosts = [
     url: "https://dev.to/catevee/learning-growing-and-thriving-my-journey-from-coding-bootcamp-to-software-guru-9e2",
   },
   {
+    id: 2,
     image: "/img6.jpg",
     title: "Are Coding Bootcamps Worth It? My Experience!",
     description:
@@ -19,6 +21,7 @@ export const blogPosts = [
     url: "https://dev.to/catevee/are-coding-bootcamps-worth-it-my-experience-pne",
   },
   {
+    id: 3,
     image: "/img3.png",
     title: "Migrating from SQLite3 to PostgreSql Database - Heroku",
     description:
@@ -28,6 +31,7 @@ export const blogPosts = [
     url: "https://dev.to/catevee/migrating-from-sqlite3-to-postgresql-database-heroku-h4l",
   },
   {
+    id: 4,
     image: "/img4.jpg",
     title: "Setting up your first ReactJS & Firebase Auth project",
     description:
