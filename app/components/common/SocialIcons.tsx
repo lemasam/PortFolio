@@ -12,8 +12,8 @@ const SocialIcons = (props: Props) => {
     <div className="flex flex-col gap-4 w-full laptop:w-1/2">
       <p className="uppercase">Connect with Me</p>
       <div className="flex gap-4">
-        {socialIcons.map((social, index) => (
-          <Card className="w-12 h-12 text-white" key={index}>
+        {socialIcons.map((social) => (
+          <Card className="w-12 h-12 text-white" key={social.id}>
             <Link href={social.url} target="_blank">
               {social.icon}
             </Link>

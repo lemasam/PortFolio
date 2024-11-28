@@ -14,6 +14,7 @@ type Props = {
     author: string;
     datePosted: string;
     url: string;
+    id: number;
   }[]
 };
 
@@ -22,10 +23,10 @@ const BlogCard = ({ blogPosts }: Props) => {
     <>
       {blogPosts.length > 0 &&
         blogPosts.map(
-          ({ image, title, description, author, datePosted, url }, index) => (
+          ({ image, title, description, author, datePosted, url, id }) => (
             <PortfolioCard
               className="w-full tablet:w-[360px] flex flex-col"
-              key={index}
+              key={id}
             >
               <Image
                 src={image}

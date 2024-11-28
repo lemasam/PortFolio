@@ -11,9 +11,9 @@ const TechStack = (props: Props) => {
     <div className="flex flex-col gap-4 w-full laptop:w-1/2">
       <p className="uppercase">Tech stack</p>
       <div className="flex gap-4">
-        {techStack.map((stack, index) => (
+        {techStack.map((stack) => (
           <Card
-            key={index}
+            key={stack.id}
             className="h-12 w-12"
             style={{ color: stack.color }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "orange")}

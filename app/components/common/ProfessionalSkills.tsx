@@ -16,11 +16,11 @@ const ProfessionalSkills = (props: Props) => {
       <div className="flex flex-col laptop:flex-row gap-4 justify-between w-full">
         <div className="w-full bg-bg-gray rounded-lg p-4">
           <div className="flex gap-4 justify-center flex-wrap">
-            {frontend.map((stack, index) => (
+            {frontend.map((stack) => (
               <Popup
                 trigger={(open) => (
                   <Card
-                    key={index}
+                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -47,11 +47,11 @@ const ProfessionalSkills = (props: Props) => {
         </div>
         <div className="w-full bg-bg-gray rounded-lg p-4">
           <div className="flex gap-4 justify-center flex-wrap">
-            {backend.map((stack, index) => (
+            {backend.map((stack) => (
               <Popup
                 trigger={(open) => (
                   <Card
-                    key={index}
+                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -78,11 +78,11 @@ const ProfessionalSkills = (props: Props) => {
         </div>
         <div className="w-full bg-bg-gray rounded-lg p-4">
           <div className="flex gap-4 justify-center flex-wrap">
-            {otherTools.map((stack, index) => (
+            {otherTools.map((stack) => (
               <Popup
                 trigger={(open) => (
                   <Card
-                    key={index}
+                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>

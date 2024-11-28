@@ -20,8 +20,8 @@ const Portfolio = (props: Props) => {
       </div>
       <div className="w-full grid grid-cols-1 tablet:grid-cols-2 gap-4">
         {projects.map(
-          ({ image, title, technologies, liveUrl, type }, index) => (
-            <Link href={liveUrl} key={index} target="_blank"className="hover:text-orange" >
+          ({ image, title, technologies, liveUrl, type, id }, index) => (
+            <Link href={liveUrl} key={id} target="_blank"className="hover:text-orange" >
               <PortfolioCard className="w-full flex flex-col">
                 <img src={image} className="rounded-t-lg w-full h-48 tablet:h-80" />
                 <div className="p-3 flex flex-col gap-2">
