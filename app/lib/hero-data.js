@@ -6,7 +6,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaBootstrap,
-  FaDocker,
+  FaPython,
   FaGithub,
   FaBitbucket,
   FaLinkedinIn,
@@ -15,6 +15,7 @@ import { DiMongodb } from "react-icons/di";
 import {
   SiExpress,
   SiTailwindcss,
+  SiFlask,
   SiTypescript,
   SiRubyonrails,
   SiRedis,
@@ -30,33 +31,33 @@ export const socialIcons = [
   {
     id: 1,
     icon: <FaLinkedinIn size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
+    url: "https://www.linkedin.com/in/lema-samuel-93b82a112/",
   },
   {
     id: 2,
     icon: <FaXTwitter size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
+    url: "https://www.linkedin.com/in/lema-samuel-93b82a112/",
   },
   {
     id: 3,
     icon: <MdWhatsapp size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
+    url: "https://www.linkedin.com/in/lema-samuel-93b82a112/",
   },
 ];
 
 export const techStack = [
-  {
-    id: 1,
-    icon: <DiMongodb size={30} />,
-    color: "#4DB33D",
-    title: "MongoDB",
-  },
-  {
-    id: 2,
-    icon: <SiExpress size={30} />,
-    color: "#ffffff",
-    title: "Express"
-  },
+  // {
+  //   id: 1,
+  //   icon: <DiMongodb size={30} />,
+  //   color: "#4DB33D",
+  //   title: "MongoDB",
+  // },
+  // {
+  //   id: 2,
+  //   icon: <SiExpress size={30} />,
+  //   color: "#ffffff",
+  //   title: "Express"
+  // },
   {
     id: 3,
     icon: <FaReact size={30} />,
@@ -82,37 +83,37 @@ export const frontend = [
     id: 2,
     icon: <FaCss3Alt size={40} />,
     color: "#214ce4",
-    title: "CSS"
+    title: "CSS",
   },
   {
     id: 3,
     icon: <FaReact size={40} />,
     color: "#61DBFB",
-    title: "React"
+    title: "React",
   },
   {
     id: 4,
     icon: <RiNextjsFill size={40} />,
     color: "#ffffff",
-    title: "NextJS"
+    title: "NextJS",
   },
   {
     id: 5,
     icon: <SiTailwindcss size={40} />,
     color: "#35bef8",
-    title: "TailwindCSS"
+    title: "TailwindCSS",
   },
   {
     id: 6,
     icon: <FaBootstrap size={40} />,
     color: "#7b11f6",
-    title: "Bootstrap CSS"
+    title: "Bootstrap CSS",
   },
   {
     id: 7,
-    icon: <TbSeo size={40} />,
+    icon: <FaPython size={40} />,
     color: "#68A063",
-    title: "SEO"
+    title: "Python"
   },
 ];
 
@@ -125,34 +126,34 @@ export const backend = [
   },
   {
     id: 2,
-    icon: <SiTypescript size={40} />,
+    icon: < SiFlask size={40} />,
     color: "#387bc8",
-    title: "Typescript"
+    title: "Flask"
   },
-  {
-    id: 3,
-    icon: <SiRubyonrails size={40} />,
-    color: "#9d180c",
-    title: "Ruby on Rails"
-  },
-  {
-    id: 4,
-    icon: <SiMysql size={40} />,
-    color: "#4DB33D",
-    title: "MySQL"
-  },
-  {
-    id: 5,
-    icon: <SiRedis size={40} />,
-    color: "#c73732",
-    title: "Redis"
-  },
-  {
-    id: 6,
-    icon: <DiMongodb size={40} />,
-    color: "#4DB33D",
-    title: "MongoDB"
-  },
+  // {
+  //   id: 3,
+  //   icon: <SiRubyonrails size={40} />,
+  //   color: "#9d180c",
+  //   title: "Ruby on Rails"
+  // },
+  // {
+  //   id: 4,
+  //   icon: <SiMysql size={40} />,
+  //   color: "#4DB33D",
+  //   title: "MySQL"
+  // },
+  // {
+  //   id: 5,
+  //   icon: <SiRedis size={40} />,
+  //   color: "#c73732",
+  //   title: "Redis"
+  // },
+  // {
+  //   id: 6,
+  //   icon: <DiMongodb size={40} />,
+  //   color: "#4DB33D",
+  //   title: "MongoDB"
+  // },
   {
     id: 7,
     icon: <SiPostgresql size={40} />,
@@ -162,46 +163,46 @@ export const backend = [
 ];
 
 export const otherTools = [
-  {
-    id: 1,
-    icon: <SiExpress size={40} />,
-    color: "#ffffff",
-    title: "Express"
-  },
+  // {
+  //   id: 1,
+  //   icon: <SiExpress size={40} />,
+  //   color: "#ffffff",
+  //   title: "Express"
+  // },
   {
     id: 2,
     icon: <FaNodeJs size={40} />,
     color: "#68A063",
     title: "NodeJS"
   },
-  {
-    id: 3,
-    icon: <FaDocker size={40} />,
-    color: "#2f99ed",
-    title: "Docker"
-  },
+  // {
+  //   id: 3,
+  //   icon: <FaDocker size={40} />,
+  //   color: "#2f99ed",
+  //   title: "Docker"
+  // },
   {
     id: 4,
     icon: <FaGithub size={40} />,
     color: "#fff",
     title: "Github"
   },
-  {
-    id: 5,
-    icon: <FaBitbucket size={40} />,
-    color: "#2e88ff",
-    title: "Bitbucket"
-  },
+  // {
+  //   id: 5,
+  //   icon: <FaBitbucket size={40} />,
+  //   color: "#2e88ff",
+  //   title: "Bitbucket"
+  // },
   {
     id: 6,
     icon: <FaFigma size={40} />,
     color: "#21d285",
     title: "Figma"
   },
-  {
-    id: 7,
-    icon: <SiPlaywright size={40} />,
-    color: "#299129",
-    title: "Playwright"
-  },
+  // {
+  //   id: 7,
+  //   icon: <SiPlaywright size={40} />,
+  //   color: "#299129",
+  //   title: "Playwright"
+  // },
 ];

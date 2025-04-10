@@ -27,7 +27,7 @@ const About = (props: Props) => {
               <div className="flex gap-2 items-center">
                 <CiLocationOn className="text-orange" />
                 <p className="text-xs">Name: </p>
-                <p className="text-xs text-white">Catherine Vuthi</p>
+                <p className="text-xs text-white">Lema Samuel</p>
               </div>
               <div className="flex gap-2 items-center">
                 <CiLocationOn className="text-orange" />
@@ -42,14 +42,14 @@ const About = (props: Props) => {
               <div className="flex gap-2 items-center">
                 <MdOutlineMailOutline className="text-orange" />
                 <p className="text-xs">Email:</p>
-                <p className="text-xs text-white">catherine.codes@gmail.com</p>
+                <p className="text-xs text-white">lemasam10@gmail.com</p>
               </div>
             </div>
             <div className="flex gap-5 flex-col mt-3">
               <div className="flex gap-2 items-center">
                 <CgWebsite className="text-orange" />
                 <p className="text-xs">Website:</p>
-                <p className="text-xs text-white">www.catherine.com</p>
+                <p className="text-xs text-white">www.lema.com</p>
               </div>
               <p className="flex gap-2 items-center text-sm text-white">
                 <span className="text-orange text-sm font-semibold gap-3">
@@ -58,7 +58,7 @@ const About = (props: Props) => {
                 Projects
               </p>
               <p className="flex gap-2 items-center text-xs text-white">
-                <span className="text-orange text-sm font-semibold">2+</span>
+                <span className="text-orange text-sm font-semibold">1</span>
                 Years of Experience
               </p>
             </div>

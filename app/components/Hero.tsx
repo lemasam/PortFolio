@@ -15,7 +15,7 @@ const Hero = (props: Props) => {
       <div className="w-full flex flex-col laptop:flex-row items-center justify-around gap-6">
         <div className="flex flex-col gap-5 w-full laptop:w-1/2">
           <div className="flex flex-col gap-1">
-            <p>Hello! I'm Catherine,</p>
+            <p>Hello! Lema,</p>
           </div>
           <h1 className="uppercase text-xl tablet:text-3xl">
             <LinearGradient
@@ -25,8 +25,9 @@ const Hero = (props: Props) => {
             </LinearGradient>
           </h1>
           <p className="text-xs tablet:pr-6">
-            I specialize in creating visually stunning user experiences that
-            prioritize both beauty and accessibility.
+            I focus on designing user experiences that are both visually
+            appealing and highly accessible, ensuring that the aesthetics and
+            usability work in harmony for all users.
           </p>
           <div className="mt-6 flex flex-col laptop:flex-row w-full gap-y-4">
             <SocialIcons />

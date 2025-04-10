@@ -27,7 +27,7 @@ const Contact = (props: Props) => {
           </div>
           <div className="flex flex-col gap-2">
             <h3>E-mail</h3>
-            <p>catherinev.codes@gmail.com</p>
+            <p>lemasam10@gmail.com</p>
           </div>
         </div>
         <div className="w-full laptop:w-1/2 mt-3 laptop:mt-o">

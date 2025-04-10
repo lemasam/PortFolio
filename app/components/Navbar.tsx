@@ -39,10 +39,10 @@ const menus = [
   //     title: 'Clients',
   //     link: '#'
   // },
-  {
-    title: "Blog",
-    link: "#blog",
-  },
+  // {
+  //   title: "Blog",
+  //   link: "#blog",
+  // },
   {
     title: "Contact",
     link: "#contact",

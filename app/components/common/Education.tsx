@@ -21,7 +21,7 @@ const Education = (props: Props) => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#1b1b1c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #1b1b1c" }}
-          date="Feb 2022 - Aug 2022"
+          date="Februry 2024 - November 2024"
           iconStyle={{ background: "#fe930e", color: "#fff" }}
           icon={<FaLaptopCode />}
           visible={true}
@@ -35,13 +35,13 @@ const Education = (props: Props) => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#1b1b1c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #1b1b1c" }}
-          date="Sep 2014 - Mar 2019"
+          date="September 2015 - December 2017"
           iconStyle={{ background: "#fe930e", color: "#fff" }}
           icon={<FaGraduationCap />}
           visible={true}
         >
           <h4 className="vertical-timeline-element-title">
-            BSc. in Information Technology
+            Diploma in Information Technology
           </h4>
           <p>Meru University of Science & Technology</p>
         </VerticalTimelineElement>

@@ -1,19 +1,19 @@
-import Link from 'next/link';
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 import QRCode from "react-qr-code";
 
-type Props = {}
+type Props = {};
 
 const QrCode = (props: Props) => {
   return (
     <div className="w-full flex flex-col gap-3">
-      <div className='bg-white rounded-sm p-2 tablet:p-3'>
+      <div className="bg-white rounded-sm p-2 tablet:p-3">
         <Link
-          href="https://docs.google.com/document/d/1hzJDlsEoO6SkvgVx24uQCasChuXvh57Yuw8eje8v2_Q/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1P1mdhHaXXvO6drn4m2PIvP82L-8wfUukr0u3VPk2JWE/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <QRCode value="https://docs.google.com/document/d/1hzJDlsEoO6SkvgVx24uQCasChuXvh57Yuw8eje8v2_Q/edit?usp=sharing" />
+          <QRCode value="https://docs.google.com/document/d/1P1mdhHaXXvO6drn4m2PIvP82L-8wfUukr0u3VPk2JWE/edit?usp=sharing" />
         </Link>
       </div>
       <div className="flex flex-col text-center font-semibold">
@@ -22,6 +22,6 @@ const QrCode = (props: Props) => {
       </div>
     </div>
   );
-}
+};
 
-export default QrCode
+export default QrCode;

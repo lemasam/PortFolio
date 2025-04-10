@@ -1,29 +1,58 @@
 "use client";
 
 import { ContactCard } from "../common/styles";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
-type Props = {};
-
-const ContactForm = (props: Props) => {
+const ContactForm = () => {
   const form = useRef<HTMLFormElement | null>(null);
+  const [messageSent, setMessageSent] = useState(false);
+  const [error, setError] = useState("");
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (messageSent) {
+      timer = setTimeout(() => setMessageSent(false), 3000);
+    }
+    return () => clearTimeout(timer);
+  }, [messageSent]);
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_ky36wxk", "template_lv220qw", form.current!, {
-        publicKey: process.env.EMAILJS_PUBLIC_KEY,
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
+    if (!form.current) {
+      console.error("❌ Form reference is null");
+      setError("Form not found. Please refresh the page.");
+      return;
+    }
+
+    console.log("📤 Sending form data...", new FormData(form.current));
+
+    // ✅ Correct way to access environment variable
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (!publicKey) {
+      console.error("❌ Missing EMAILJS Public Key");
+      setError("EmailJS Public Key is missing. Check your .env.local file.");
+      return;
+    }
+
+    try {
+      const response = await emailjs.sendForm(
+        "service_bujvq2i",
+        "template_v5zaquj",
+        form.current!,
+        publicKey // ✅ Correct way to pass publicKey
       );
+
+      console.log("✅ Email sent successfully:", response);
+      setMessageSent(true);
+      setError("");
+      form.current.reset();
+    } catch (err: any) {
+      console.error("❌ Email sending failed:", err);
+      setError(`Failed to send message. ${err.text || err.message}`);
+    }
   };
 
   return (
@@ -41,18 +70,21 @@ const ContactForm = (props: Props) => {
           placeholder="Name"
           name="from_name"
           className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-none"
+          required
         />
         <input
           type="email"
           placeholder="Email"
           name="from_email"
           className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-none"
+          required
         />
         <textarea
           placeholder="Message"
           name="message"
           className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-none"
           rows={2}
+          required
         />
         <input
           type="submit"
@@ -60,6 +92,12 @@ const ContactForm = (props: Props) => {
           className="py-2 px-4 border-2 border-orange m-auto rounded-lg flex justify-center items-center mt-3 text-orange hover:text-white cursor-pointer"
         />
       </form>
+      {messageSent && (
+        <p className="text-green-600 text-center mt-2">
+          Message sent successfully!
+        </p>
+      )}
+      {error && <p className="text-red-600 text-center mt-2">{error}</p>}
     </ContactCard>
   );
 };

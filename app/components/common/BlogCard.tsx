@@ -13,7 +13,7 @@ type Props = {
     description: string;
     author: string;
     datePosted: string;
-    url: string;
+   
     id: number;
   }[]
 };
@@ -37,9 +37,9 @@ const BlogCard = ({ blogPosts }: Props) => {
               />
               <div className="bg-bg-gray">
                 <div className="px-2 py-3 flex flex-col gap-3">
-                  <Link href={url} className="font-bold text-sm hover:text-orange" target="_blank">
+                  {/* <Link href={url} className="font-bold text-sm hover:text-orange" target="_blank">
                     {title}
-                  </Link>
+                  </Link> */}
                   <p className="text-xs">{description}</p>
                 </div>
                 <div className="px-2 py-3 flex gap-2 items-center">

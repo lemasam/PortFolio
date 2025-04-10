@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 // })
 
 export const metadata: Metadata = {
-  title: "Catherine - Design Portfolio",
+  title: "Lema - Design Portfolio",
   description: "Software Engineer",
 };
 
