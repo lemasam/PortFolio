@@ -14,13 +14,14 @@ const ProfessionalSkills = (props: Props) => {
         <h3>My Skills</h3>
       </div>
       <div className="flex flex-col laptop:flex-row gap-4 justify-between w-full">
+        {/* Frontend skills */}
         <div className="w-full bg-bg-gray rounded-lg p-4">
           <div className="flex gap-4 justify-center flex-wrap">
             {frontend.map((stack) => (
               <Popup
+                key={stack.id}
                 trigger={(open) => (
                   <Card
-                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -36,22 +37,22 @@ const ProfessionalSkills = (props: Props) => {
                 position="top center"
                 closeOnDocumentClick
                 on={["hover", "focus"]}
-                {...{
-                  contentStyle,
-                }}
+                {...{ contentStyle }}
               >
-                <span className="text-bg-dark text-sm">{ stack.title}</span>
+                <span className="text-bg-dark text-sm">{stack.title}</span>
               </Popup>
             ))}
           </div>
         </div>
+
+        {/* Backend skills */}
         <div className="w-full bg-bg-gray rounded-lg p-4">
           <div className="flex gap-4 justify-center flex-wrap">
             {backend.map((stack) => (
               <Popup
+                key={stack.id}
                 trigger={(open) => (
                   <Card
-                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -67,22 +68,22 @@ const ProfessionalSkills = (props: Props) => {
                 position="top center"
                 closeOnDocumentClick
                 on={["hover", "focus"]}
-                {...{
-                  contentStyle,
-                }}
+                {...{ contentStyle }}
               >
-                <span className="text-bg-dark text-sm">{ stack.title}</span>
+                <span className="text-bg-dark text-sm">{stack.title}</span>
               </Popup>
             ))}
           </div>
         </div>
+
+        {/* Other tools */}
         <div className="w-full bg-bg-gray rounded-lg p-4">
           <div className="flex gap-4 justify-center flex-wrap">
             {otherTools.map((stack) => (
               <Popup
+                key={stack.id}
                 trigger={(open) => (
                   <Card
-                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -98,11 +99,9 @@ const ProfessionalSkills = (props: Props) => {
                 position="top center"
                 closeOnDocumentClick
                 on={["hover", "focus"]}
-                {...{
-                  contentStyle,
-                }}
+                {...{ contentStyle }}
               >
-                <span className="text-bg-dark text-sm">{ stack.title}</span>
+                <span className="text-bg-dark text-sm">{stack.title}</span>
               </Popup>
             ))}
           </div>

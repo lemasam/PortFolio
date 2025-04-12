@@ -23,7 +23,7 @@ const BlogCard = ({ blogPosts }: Props) => {
     <>
       {blogPosts.length > 0 &&
         blogPosts.map(
-          ({ image, title, description, author, datePosted, url, id }) => (
+          ({ image, title, description, author, datePosted,id }) => (
             <PortfolioCard
               className="w-full tablet:w-[360px] flex flex-col"
               key={id}
@@ -37,9 +37,7 @@ const BlogCard = ({ blogPosts }: Props) => {
               />
               <div className="bg-bg-gray">
                 <div className="px-2 py-3 flex flex-col gap-3">
-                  {/* <Link href={url} className="font-bold text-sm hover:text-orange" target="_blank">
-                    {title}
-                  </Link> */}
+                 
                   <p className="text-xs">{description}</p>
                 </div>
                 <div className="px-2 py-3 flex gap-2 items-center">
